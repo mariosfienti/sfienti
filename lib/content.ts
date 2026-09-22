@@ -22,17 +22,9 @@ export interface LanguageItem {
   pct: number;
 }
 
-export interface SkillGroup {
-  id?: string;
-  cat: string;
-  desc?: string;
-  badge?: string;
-  items: string[];
-}
-
 export interface Content {
   meta: { title: string; description: string };
-  nav: { about: string; experience: string; projects: string; skills: string; contact: string };
+  nav: { about: string; experience: string; projects: string; contact: string };
   heroName: string;
   heroRole: string;
   heroIntro: string;
@@ -53,8 +45,6 @@ export interface Content {
     bullets: string[];
     linkLabel: string;
   };
-  skillsTitle: string;
-  skills: SkillGroup[];
   eduTitle: string;
   education: EducationItem[];
   langTitle: string;
@@ -86,7 +76,7 @@ export const CONTENT: Record<Lang, Content> = {
       description:
         "Product Manager con oltre 13 anni di esperienza nel digitale. Fondatore di TrustEU, il progetto sulla sovranità digitale europea."
     },
-    nav: { about: "Chi sono", experience: "Esperienza", projects: "Progetti", skills: "Competenze", contact: "Contatti" },
+    nav: { about: "Chi sono", experience: "Esperienza", projects: "Progetti", contact: "Contatti" },
     heroName: "Mario Alessandro Sfienti",
     heroRole: "Digital Product Manager",
     heroIntro:
@@ -142,57 +132,6 @@ export const CONTENT: Record<Lang, Content> = {
       ],
       linkLabel: "Visita trusteu.eu"
     },
-    skillsTitle: "Competenze",
-    skills: [
-      {
-        id: "strategy",
-        cat: "Product Strategy & Discovery",
-        desc: "Definizione della vision, prioritizzazione orientata agli outcome e ricerca continua sui bisogni reali degli utenti.",
-        badge: "13+ anni",
-        items: ["Product Roadmap & Vision", "User Discovery & Interviste", "Backlog Prioritization (MoSCoW / RICE)", "Opportunity Trees & Problem Framing", "Benchmarking Software Europeo", "Product Advisory"]
-      },
-      {
-        id: "agile",
-        cat: "Agile, Scrum & Delivery",
-        desc: "Guida di team cross-funzionali multidisciplinari (tech, design, marketing) con cicli di sviluppo iterativi e veloci.",
-        badge: "Scrum & Scrumban",
-        items: ["Scrum Master & Product Owner", "Scrumban Framework", "Sprint Planning & Retrospective", "User Stories & Criteri di accettazione", "Quality Assurance (QA)", "Cross-functional Leadership"]
-      },
-      {
-        id: "ai",
-        cat: "AI Generativa & Prototipazione",
-        desc: "Integrazione dei modelli LLM all'avanguardia nei flussi di lavoro di prodotto per prototipare rapidamente e automatizzare processi.",
-        badge: "Applicato su TrustEU",
-        items: ["Claude (Anthropic)", "Google AI Studio & Gemini", "OpenAI Codex & GPT", "Mistral AI", "Qwen", "AI-driven Product Prototyping", "Prompt Crafting & Automation"]
-      },
-      {
-        id: "data",
-        cat: "Dati, Analytics & CRO",
-        desc: "Monitoraggio continuo dei funnel, comportamento in pagina e test A/B per ottimizzare donazioni, retention e conversioni.",
-        badge: "Data-Informed",
-        items: ["Google Analytics 4 (GA4)", "Google Search Console", "Hotjar", "Funnel & Churn Analysis", "Ottimizzazione Conversioni (CRO)", "Stata (Analisi statistica)"]
-      },
-      {
-        id: "fintech",
-        cat: "Fintech & Pagamenti Digitali",
-        desc: "Integrazione e orchestrazione di gateway di pagamento sicuri per flussi di donazione una tantum e ricorrenti.",
-        items: ["Integrazione Stripe & Webhooks", "PayPal Checkout & IPN", "Satispay Business", "Flussi 3D Secure & PSD2"]
-      },
-      {
-        id: "tech",
-        cat: "Architettura Web & Stack Tecnico",
-        desc: "Solida alfabetizzazione tecnica per interfacciarsi in modo credibile e approfondito con architetti e sviluppatori.",
-        badge: "Technical PM",
-        items: ["Drupal Enterprise CMS", "WordPress & Joomla", "Next.js & Vercel deployment", "SQL & Database Querying", "PHP (logica applicativa)", "REST API & Webhooks"]
-      },
-      {
-        id: "tools",
-        cat: "Toolchain & Collaborazione",
-        desc: "Strumenti utilizzati quotidianamente per la gestione del backlog, la documentazione di prodotto e il coordinamento del team.",
-        badge: "Daily Stack",
-        items: ["Jira Software", "Trello", "Redmine", "Figma & FigJam", "Google Workspace", "Slack"]
-      }
-    ],
     eduTitle: "Formazione",
     education: [
       { title: "Laurea in ICT, Innovazione sociale, comunicazione e nuove tecnologie", org: "Università degli Studi di Torino", period: "2024 — in corso · in parallelo al lavoro" },
@@ -232,7 +171,7 @@ export const CONTENT: Record<Lang, Content> = {
       description:
         "Product Manager with 13+ years of experience in digital. Founder of TrustEU, a project on European digital sovereignty."
     },
-    nav: { about: "About", experience: "Experience", projects: "Projects", skills: "Skills", contact: "Contact" },
+    nav: { about: "About", experience: "Experience", projects: "Projects", contact: "Contact" },
     heroName: "Mario Alessandro Sfienti",
     heroRole: "Digital Product Manager",
     heroIntro:
@@ -288,57 +227,6 @@ export const CONTENT: Record<Lang, Content> = {
       ],
       linkLabel: "Visit trusteu.eu"
     },
-    skillsTitle: "Skills",
-    skills: [
-      {
-        id: "strategy",
-        cat: "Product Strategy & Discovery",
-        desc: "Vision definition, outcome-driven prioritization, and continuous user research into real user problems.",
-        badge: "13+ years",
-        items: ["Product Roadmap & Vision", "User Discovery & Interviews", "Backlog Prioritization (MoSCoW / RICE)", "Opportunity Trees & Problem Framing", "European Software Benchmarking", "Product Advisory"]
-      },
-      {
-        id: "agile",
-        cat: "Agile, Scrum & Delivery",
-        desc: "Leading cross-functional teams (engineering, design, marketing) with fast, iterative development cycles.",
-        badge: "Scrum & Scrumban",
-        items: ["Scrum Master & Product Owner", "Scrumban Framework", "Sprint Planning & Retrospectives", "User Stories & Acceptance Criteria", "Quality Assurance (QA)", "Cross-functional Leadership"]
-      },
-      {
-        id: "ai",
-        cat: "Generative AI & Prototyping",
-        desc: "Integrating state-of-the-art LLMs into product discovery workflows to rapidly prototype and automate processes.",
-        badge: "Applied on TrustEU",
-        items: ["Claude (Anthropic)", "Google AI Studio & Gemini", "OpenAI Codex & GPT", "Mistral AI", "Qwen", "AI-driven Product Prototyping", "Prompt Crafting & Automation"]
-      },
-      {
-        id: "data",
-        cat: "Data Analytics & CRO",
-        desc: "Continuous monitoring of user funnels, on-site behavior, and A/B testing to optimize conversion and donor retention.",
-        badge: "Data-Informed",
-        items: ["Google Analytics 4 (GA4)", "Google Search Console", "Hotjar", "Funnel & Churn Analysis", "Conversion Rate Optimization (CRO)", "Stata (Statistical Analysis)"]
-      },
-      {
-        id: "fintech",
-        cat: "Fintech & Digital Payments",
-        desc: "Integration and orchestration of secure payment gateways for one-time and recurring donation flows at scale.",
-        items: ["Stripe Integration & Webhooks", "PayPal Checkout & IPN", "Satispay Business", "3D Secure & PSD2 Compliance"]
-      },
-      {
-        id: "tech",
-        cat: "Web Architecture & Tech Stack",
-        desc: "Solid technical literacy enabling high-context, credible communication with engineers and architects.",
-        badge: "Technical PM",
-        items: ["Drupal Enterprise CMS", "WordPress & Joomla", "Next.js & Vercel deployment", "SQL & Database Querying", "PHP (application logic)", "REST APIs & Webhooks"]
-      },
-      {
-        id: "tools",
-        cat: "Toolchain & Collaboration",
-        desc: "Daily tools for backlog tracking, product specifications, documentation, and asynchronous team coordination.",
-        badge: "Daily Stack",
-        items: ["Jira Software", "Trello", "Redmine", "Figma & FigJam", "Google Workspace", "Slack"]
-      }
-    ],
     eduTitle: "Education",
     education: [
       { title: "Degree in ICT, Social Innovation, Communication and New Technologies", org: "University of Turin", period: "2024 — in progress · alongside my job" },

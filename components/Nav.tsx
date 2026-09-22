@@ -5,11 +5,10 @@ import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
 import { Menu, X, ArrowUpRight, Globe, Sparkles } from "lucide-react";
 
-const links: { key: "about" | "experience" | "projects" | "skills" | "contact"; href: string }[] = [
+const links: { key: "about" | "experience" | "projects" | "contact"; href: string }[] = [
   { key: "about", href: "#about" },
   { key: "experience", href: "#experience" },
   { key: "projects", href: "#projects" },
-  { key: "skills", href: "#skills" },
   { key: "contact", href: "#contact" }
 ];
 
