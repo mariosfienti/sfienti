@@ -61,10 +61,8 @@ export interface Content {
     emailPlaceholder: string;
     messagePlaceholder: string;
     submitLabel: string;
-    submittingLabel: string;
     thanksTitle: string;
     thanksBody: string;
-    errorBody: string;
   };
   footerNote: string;
 }
@@ -158,10 +156,8 @@ export const CONTENT: Record<Lang, Content> = {
       emailPlaceholder: "latua@email.com",
       messagePlaceholder: "Scrivi qui il tuo messaggio...",
       submitLabel: "Invia messaggio",
-      submittingLabel: "Invio in corso...",
-      thanksTitle: "Grazie!",
-      thanksBody: "Ho ricevuto il tuo messaggio, ti risponderò al più presto.",
-      errorBody: "Qualcosa è andato storto. Riprova tra qualche minuto oppure scrivimi direttamente via email."
+      thanksTitle: "Quasi fatto!",
+      thanksBody: "Ho aperto il tuo programma di posta con il messaggio già pronto: premi invia per completarlo."
     },
     footerNote: "Realizzato con cura a Torino."
   },
@@ -253,10 +249,8 @@ export const CONTENT: Record<Lang, Content> = {
       emailPlaceholder: "you@email.com",
       messagePlaceholder: "Write your message here...",
       submitLabel: "Send message",
-      submittingLabel: "Sending...",
-      thanksTitle: "Thank you!",
-      thanksBody: "I've received your message and will get back to you soon.",
-      errorBody: "Something went wrong. Please try again in a few minutes or email me directly."
+      thanksTitle: "Almost done!",
+      thanksBody: "I've opened your email app with the message ready — hit send to complete it."
     },
     footerNote: "Designed with care in Turin."
   }

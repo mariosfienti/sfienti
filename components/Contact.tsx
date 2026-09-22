@@ -6,14 +6,12 @@ import { SITE } from "@/lib/content";
 import {
   ExternalLink,
   Send,
-  Loader2,
   CheckCircle2,
-  AlertCircle,
   ArrowUp,
   Sparkles
 } from "lucide-react";
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Status = "idle" | "success";
 
 export default function Contact() {
   const { t, lang } = useLanguage();
@@ -23,7 +21,7 @@ export default function Contact() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -34,24 +32,18 @@ export default function Contact() {
       return;
     }
 
-    setStatus("submitting");
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: data.get("name"),
-          email: data.get("email"),
-          message: data.get("message"),
-          lang
-        })
-      });
-      if (!res.ok) throw new Error("request failed");
-      setStatus("success");
-      form.reset();
-    } catch {
-      setStatus("error");
-    }
+    const name = String(data.get("name") ?? "");
+    const email = String(data.get("email") ?? "");
+    const message = String(data.get("message") ?? "");
+
+    const subject = lang === "it" ? `Contatto dal sito da ${name}` : `Website contact from ${name}`;
+    const body =
+      (lang === "it" ? `Nome: ${name}\nEmail: ${email}\n\nMessaggio:\n` : `Name: ${name}\nEmail: ${email}\n\nMessage:\n`) +
+      message;
+
+    window.location.href = `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    setStatus("success");
+    form.reset();
   }
 
   return (
@@ -144,29 +136,12 @@ export default function Contact() {
                   />
                 </div>
 
-                {status === "error" && (
-                  <div className="flex items-center gap-2 rounded-xl border border-red-500/20 bg-red-500/10 p-3 text-xs font-semibold text-red-300">
-                    <AlertCircle className="h-4 w-4 flex-shrink-0 text-red-400" />
-                    <span>{t.form.errorBody}</span>
-                  </div>
-                )}
-
                 <button
                   type="submit"
-                  disabled={status === "submitting"}
-                  className="mt-2 flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue to-violet font-display text-[15px] font-bold text-white shadow-lg transition-all duration-200 hover:opacity-95 hover:shadow-glow active:scale-95 disabled:opacity-60 cursor-pointer"
+                  className="mt-2 flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue to-violet font-display text-[15px] font-bold text-white shadow-lg transition-all duration-200 hover:opacity-95 hover:shadow-glow active:scale-95 cursor-pointer"
                 >
-                  {status === "submitting" ? (
-                    <>
-                      <Loader2 className="h-4 w-4 animate-spin" />
-                      <span>{t.form.submittingLabel}</span>
-                    </>
-                  ) : (
-                    <>
-                      <span>{t.form.submitLabel}</span>
-                      <Send className="h-4 w-4" />
-                    </>
-                  )}
+                  <span>{t.form.submitLabel}</span>
+                  <Send className="h-4 w-4" />
                 </button>
               </>
             )}
