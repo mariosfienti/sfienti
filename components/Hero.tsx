@@ -140,7 +140,7 @@ export default function Hero() {
 
             {/* Right Column Portrait (Desktop only: clean framed card) */}
             <div className="hidden lg:col-span-4 lg:flex lg:justify-end">
-              <div className="relative flex h-[360px] w-[300px] items-end justify-center overflow-hidden rounded-2xl border border-slate-200/90 bg-gradient-to-b from-[#EBF0FF] via-[#F2F4FD] to-[#F8F5FE] shadow-md">
+              <div className="relative flex h-[360px] w-[300px] items-center justify-center overflow-hidden rounded-2xl border border-slate-200/90 bg-gradient-to-b from-[#EBF0FF] via-[#F2F4FD] to-[#F8F5FE] shadow-md">
                 <Image
                   src="/mario-headshot.png"
                   alt="Mario Alessandro Sfienti"

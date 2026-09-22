@@ -28,7 +28,7 @@ export default function Experience() {
   };
 
   return (
-    <section id="experience" className="py-16 md:py-24">
+    <section id="experience" className="py-12 md:py-16">
       <div className="mx-auto max-w-[1200px] px-5 md:px-8">
         {/* Section Header */}
         <div className="mb-10 flex flex-col gap-2 md:mb-14">

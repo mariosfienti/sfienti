@@ -42,7 +42,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="border-y border-slate-200/80 bg-white py-16 md:py-24">
+    <section id="about" className="border-y border-slate-200/80 bg-white py-12 md:py-16">
       <div className="mx-auto max-w-[1200px] px-5 md:px-8">
         {/* Section Header */}
         <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">

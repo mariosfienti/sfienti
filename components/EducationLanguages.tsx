@@ -7,7 +7,7 @@ export default function EducationLanguages() {
   const { t, lang } = useLanguage();
 
   return (
-    <section className="py-16 md:py-24 bg-[#FAFAF9]">
+    <section className="py-12 md:py-16 bg-[#FAFAF9]">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-5 md:grid-cols-2 md:gap-14 md:px-8">
         {/* Education Column */}
         <div className="flex flex-col gap-6">

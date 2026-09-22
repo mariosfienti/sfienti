@@ -316,7 +316,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="border-y border-slate-200/80 bg-white py-16 md:py-24">
+    <section id="skills" className="border-y border-slate-200/80 bg-white py-12 md:py-16">
       <div className="mx-auto max-w-[1200px] px-5 md:px-8">
         
         {/* Header */}

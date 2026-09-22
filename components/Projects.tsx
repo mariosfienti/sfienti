@@ -17,7 +17,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-16 md:py-24 bg-gradient-to-b from-transparent via-[#F4F6FC]/60 to-transparent">
+    <section id="projects" className="py-12 md:py-16 bg-gradient-to-b from-transparent via-[#F4F6FC]/60 to-transparent">
       <div className="mx-auto max-w-[1200px] px-5 md:px-8">
         {/* Section Header */}
         <div className="mb-10 flex flex-col gap-2 md:mb-14">
