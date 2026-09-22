@@ -42,6 +42,7 @@ export interface Content {
   projTitle: string;
   proj: {
     name: string;
+    logo?: string;
     role: string;
     period: string;
     desc: string;
@@ -123,6 +124,7 @@ export const CONTENT: Record<Lang, Content> = {
     projTitle: "Progetto personale",
     proj: {
       name: "TrustEU",
+      logo: "/logos/trusteu.webp",
       role: "Founder & Product Lead",
       period: "2026 — oggi · in parallelo",
       desc: "Piattaforma indipendente che mappa soluzioni cloud, software e servizi europei per promuovere la sovranità digitale in Europa.",
@@ -223,6 +225,7 @@ export const CONTENT: Record<Lang, Content> = {
     projTitle: "Personal project",
     proj: {
       name: "TrustEU",
+      logo: "/logos/trusteu.webp",
       role: "Founder & Product Lead",
       period: "2026 — present · alongside my job",
       desc: "An independent platform mapping European cloud, software and service alternatives to promote digital sovereignty in Europe.",

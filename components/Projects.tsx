@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
 import { SITE } from "@/lib/content";
 
@@ -15,6 +16,15 @@ export default function Projects() {
         </div>
         <div className="rounded-[24px] bg-gradient-to-br from-blue to-violet p-0.5">
           <div className="flex flex-col gap-4 rounded-[22px] bg-white p-6 md:p-11">
+            {t.proj.logo && (
+              <Image
+                src={t.proj.logo}
+                alt={t.proj.name}
+                width={160}
+                height={40}
+                className="h-9 w-auto object-contain"
+              />
+            )}
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <h3 className="font-display text-2xl font-bold text-ink">{t.proj.name}</h3>
