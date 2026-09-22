@@ -16,14 +16,6 @@ export default function About() {
         </div>
         <div className="flex flex-1 flex-col gap-9">
           <p className="max-w-[680px] text-[17px] leading-relaxed text-[#33354A] md:text-[18px]">{t.aboutBody}</p>
-          <div className="flex flex-wrap gap-12">
-            {t.stats.map((stat) => (
-              <div key={stat.label} className="flex flex-col gap-1">
-                <span className="font-display text-[30px] font-bold text-ink md:text-[34px]">{stat.value}</span>
-                <span className="text-sm text-muted">{stat.label}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

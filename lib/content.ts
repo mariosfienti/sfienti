@@ -36,7 +36,6 @@ export interface Content {
   ctaLinkedin: string;
   aboutTitle: string;
   aboutBody: string;
-  stats: { value: string; label: string }[];
   expTitle: string;
   experience: ExperienceItem[];
   projTitle: string;
@@ -92,11 +91,6 @@ export const CONTENT: Record<Lang, Content> = {
     aboutTitle: "Chi sono",
     aboutBody:
       "Sono un Product Manager con oltre 13 anni di esperienza nella gestione di piattaforme digitali. Attualmente sono responsabile del prodotto di una delle principali piattaforme italiane di crowdfunding e raccolta fondi per il non profit, dove seguo l'intero ciclo di vita del prodotto con metodologia Agile (Scrum, Scrumban). In parallelo, sto completando la laurea in ICT, Innovazione sociale, comunicazione e nuove tecnologie all'Università degli Studi di Torino, e porto avanti TrustEU, un progetto indipendente sulla sovranità digitale europea.",
-    stats: [
-      { value: "13+", label: "anni da Product Manager" },
-      { value: "2", label: "progetti seguiti in parallelo" },
-      { value: "3", label: "lingue parlate" }
-    ],
     expTitle: "Esperienza",
     experience: [
       {
@@ -195,11 +189,6 @@ export const CONTENT: Record<Lang, Content> = {
     aboutTitle: "About me",
     aboutBody:
       "I'm a Product Manager with 13+ years of experience running digital platforms. I currently own the product for one of Italy's leading nonprofit crowdfunding and fundraising platforms, covering the full product lifecycle with Agile methodology (Scrum, Scrumban). Alongside my job, I'm completing a degree in ICT, Social Innovation, Communication and New Technologies at the University of Turin, and running TrustEU, an independent project on European digital sovereignty.",
-    stats: [
-      { value: "13+", label: "years as a Product Manager" },
-      { value: "2", label: "projects run in parallel" },
-      { value: "3", label: "languages spoken" }
-    ],
     expTitle: "Experience",
     experience: [
       {
