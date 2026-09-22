@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
 
 export default function Experience() {
@@ -16,9 +17,20 @@ export default function Experience() {
           {t.experience.map((exp) => (
             <div key={`${exp.company}-${exp.period}`} className="flex flex-col gap-4 rounded-[20px] border border-[#E7E7EF] bg-white p-6 md:p-11">
               <div className="flex flex-wrap items-start justify-between gap-3">
-                <div>
-                  <h3 className="font-display text-xl font-bold text-ink md:text-[22px]">{exp.role}</h3>
-                  <div className="text-[15px] font-bold text-blue">{exp.company}</div>
+                <div className="flex items-center gap-4">
+                  {exp.companyLogo && (
+                    <Image
+                      src={exp.companyLogo}
+                      alt={exp.company}
+                      width={48}
+                      height={48}
+                      className="h-12 w-12 flex-shrink-0 rounded-lg object-contain"
+                    />
+                  )}
+                  <div>
+                    <h3 className="font-display text-xl font-bold text-ink md:text-[22px]">{exp.role}</h3>
+                    <div className="text-[15px] font-bold text-blue">{exp.company}</div>
+                  </div>
                 </div>
                 <span className="whitespace-nowrap text-sm font-semibold text-muted">{exp.period}</span>
               </div>

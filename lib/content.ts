@@ -3,6 +3,7 @@ export type Lang = "it" | "en";
 export interface ExperienceItem {
   role: string;
   company: string;
+  companyLogo?: string;
   period: string;
   desc: string;
   bullets: string[];
@@ -96,6 +97,7 @@ export const CONTENT: Record<Lang, Content> = {
       {
         role: "Product Manager",
         company: "Rete del Dono",
+        companyLogo: "/logos/rete-del-dono.webp",
         period: "Apr 2012 — oggi",
         desc: "Piattaforma italiana leader nel crowdfunding e fundraising digitale non profit.",
         bullets: [
@@ -108,6 +110,7 @@ export const CONTENT: Record<Lang, Content> = {
       {
         role: "Marketing Manager",
         company: "Bakeca",
+        companyLogo: "/logos/bakeca.webp",
         period: "Gen 2009 — Gen 2012",
         desc: "Campagne di marketing offline e below-the-line.",
         bullets: [
@@ -194,6 +197,7 @@ export const CONTENT: Record<Lang, Content> = {
       {
         role: "Product Manager",
         company: "Rete del Dono",
+        companyLogo: "/logos/rete-del-dono.webp",
         period: "Apr 2012 — present",
         desc: "Leading Italian platform for nonprofit crowdfunding and digital fundraising.",
         bullets: [
@@ -206,6 +210,7 @@ export const CONTENT: Record<Lang, Content> = {
       {
         role: "Marketing Manager",
         company: "Bakeca",
+        companyLogo: "/logos/bakeca.webp",
         period: "Jan 2009 — Jan 2012",
         desc: "Offline and below-the-line marketing campaigns.",
         bullets: [
