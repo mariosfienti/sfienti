@@ -9,14 +9,18 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
   margin: 0;
   background: #fafaf9;
   color: #14161f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
   background: #dce6ff;
+  color: #14161f;
 }
