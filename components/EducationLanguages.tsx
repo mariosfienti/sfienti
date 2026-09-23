@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
 import { GraduationCap, Languages, Calendar, Award } from "lucide-react";
 
@@ -32,6 +33,15 @@ export default function EducationLanguages() {
                     <Calendar className="h-3 w-3" />
                     <span>{ed.period}</span>
                   </span>
+                  {ed.logo && (
+                    <Image
+                      src={ed.logo}
+                      alt={ed.org}
+                      width={36}
+                      height={36}
+                      className="h-9 w-9 flex-shrink-0 rounded-lg object-contain"
+                    />
+                  )}
                 </div>
                 <h3 className="font-display text-[16px] font-bold text-ink">
                   {ed.title}
