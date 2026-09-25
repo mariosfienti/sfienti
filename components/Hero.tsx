@@ -4,15 +4,11 @@ import Image from "next/image";
 import { useLanguage } from "./LanguageProvider";
 import { SITE } from "@/lib/content";
 import {
-  MapPin,
   MessageSquare,
   Share2,
-  ExternalLink,
   ArrowUpRight,
   Sparkles,
-  Layers,
   Award,
-  ShieldCheck,
   Compass,
   BarChart3,
   Target,
@@ -91,29 +87,6 @@ export default function Hero() {
               <p className="text-[16px] leading-relaxed text-[#3B3E52] sm:text-[17.5px] md:text-[18.5px]">
                 {t.heroIntro}
               </p>
-
-              {/* Badges / Context row */}
-              <div className="flex flex-wrap items-center gap-2.5 text-xs sm:text-sm font-semibold text-muted">
-                <div className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-white px-2.5 py-1 text-slate-700 shadow-2xs">
-                  <MapPin className="h-3.5 w-3.5 text-blue" />
-                  <span>{t.heroLocation}</span>
-                </div>
-                <a
-                  href={SITE.trusteu}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group/trust inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-white px-2.5 py-1 text-slate-700 shadow-2xs transition-colors hover:border-slate-300 hover:text-blue"
-                  title="trusteu.eu"
-                >
-                  <ShieldCheck className="h-3.5 w-3.5 text-slate-500 transition-colors group-hover/trust:text-blue" />
-                  <span>TrustEU Lead</span>
-                  <ExternalLink className="h-3 w-3 opacity-50 transition-colors group-hover/trust:opacity-100" />
-                </a>
-                <div className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-white px-2.5 py-1 text-slate-700 shadow-2xs">
-                  <Layers className="h-3.5 w-3.5 text-slate-500" />
-                  <span>Discovery · Roadmap · UX</span>
-                </div>
-              </div>
 
               {/* Interactive CTAs */}
               <div className="flex flex-wrap items-center gap-3 pt-2">
