@@ -79,13 +79,13 @@ export const CONTENT: Record<Lang, Content> = {
     heroName: "Mario Alessandro Sfienti",
     heroRole: "Digital Product Manager",
     heroIntro:
-      "Guido lo sviluppo di prodotti digitali da oltre 13 anni: dalla discovery alla roadmap, fino al rilascio. Oggi lavoro su una piattaforma italiana di crowdfunding non profit e porto avanti TrustEU, il mio progetto sulla sovranità digitale europea.",
+      "Guido lo sviluppo di prodotti digitali da oltre 13 anni: dalla discovery alla roadmap, fino al rilascio, con un focus su dati, sistemi di pagamento e ottimizzazione delle conversioni. Oggi lavoro su una piattaforma italiana di raccolta fondi e porto avanti TrustEU, il mio progetto sulla sovranità digitale europea.",
     heroLocation: "Torino, Italia",
     ctaContact: "Scrivimi",
     ctaLinkedin: "Profilo LinkedIn",
     aboutTitle: "Chi sono",
     aboutBody:
-      "Sono un Product Manager con oltre 13 anni di esperienza nella gestione di piattaforme digitali. Attualmente sono responsabile del prodotto di una delle principali piattaforme italiane di crowdfunding e raccolta fondi per il non profit, dove seguo l'intero ciclo di vita del prodotto con metodologia Agile (Scrum, Scrumban). In parallelo, sto completando la laurea in ICT, Innovazione sociale, comunicazione e nuove tecnologie all'Università degli Studi di Torino, e porto avanti TrustEU, un progetto indipendente sulla sovranità digitale europea.",
+      "Sono un Product Manager con oltre 13 anni di esperienza nella gestione di piattaforme digitali, con competenze trasversali su sistemi di pagamento, dati transazionali e crescita che ho applicato a contesti diversi — dal fundraising al marketing fino a progetti editoriali indipendenti. Attualmente sono responsabile del prodotto di una delle principali piattaforme italiane di raccolta fondi, dove seguo l'intero ciclo di vita del prodotto con metodologia Agile (Scrum, Scrumban). In parallelo, sto completando la laurea in ICT, Innovazione sociale, comunicazione e nuove tecnologie all'Università degli Studi di Torino, e porto avanti TrustEU, un progetto indipendente sulla sovranità digitale europea.",
     expTitle: "Esperienza",
     experience: [
       {
@@ -172,13 +172,13 @@ export const CONTENT: Record<Lang, Content> = {
     heroName: "Mario Alessandro Sfienti",
     heroRole: "Digital Product Manager",
     heroIntro:
-      "I've been driving digital product development for 13+ years — from discovery to roadmap to release. I currently work on an Italian nonprofit crowdfunding platform and run TrustEU, my project on European digital sovereignty.",
+      "I've been driving digital product development for 13+ years — from discovery to roadmap to release, with a focus on data, payment systems and conversion optimization. I currently work on an Italian fundraising platform and run TrustEU, my project on European digital sovereignty.",
     heroLocation: "Turin, Italy",
     ctaContact: "Get in touch",
     ctaLinkedin: "LinkedIn profile",
     aboutTitle: "About me",
     aboutBody:
-      "I'm a Product Manager with 13+ years of experience running digital platforms. I currently own the product for one of Italy's leading nonprofit crowdfunding and fundraising platforms, covering the full product lifecycle with Agile methodology (Scrum, Scrumban). Alongside my job, I'm completing a degree in ICT, Social Innovation, Communication and New Technologies at the University of Turin, and running TrustEU, an independent project on European digital sovereignty.",
+      "I'm a Product Manager with 13+ years of experience running digital platforms, with cross-cutting expertise in payment systems, transactional data and growth that I've applied across different contexts — from fundraising to marketing to independent editorial projects. I currently own the product for one of Italy's leading fundraising platforms, covering the full product lifecycle with Agile methodology (Scrum, Scrumban). Alongside my job, I'm completing a degree in ICT, Social Innovation, Communication and New Technologies at the University of Turin, and running TrustEU, an independent project on European digital sovereignty.",
     expTitle: "Experience",
     experience: [
       {
