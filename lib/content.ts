@@ -85,7 +85,7 @@ export const CONTENT: Record<Lang, Content> = {
     ctaLinkedin: "Profilo LinkedIn",
     aboutTitle: "Chi sono",
     aboutBody:
-      "Sono un Product Manager con oltre 13 anni di esperienza nella gestione di piattaforme digitali. Attualmente sono responsabile del prodotto di una delle principali piattaforme italiane di crowdfunding e raccolta fondi per il non profit, dove seguo l'intero ciclo di vita del prodotto con metodologia Agile (Scrum, Scrumban). In parallelo, sto completando la laurea in ICT, Innovazione sociale, comunicazione e nuove tecnologie all'Università degli Studi di Torino, e porto avanti TrustEU, un progetto indipendente sulla sovranità digitale europea.",
+      "Sono un Product Manager con esperienza nella gestione di piattaforme digitali. Attualmente sono responsabile del prodotto di una delle principali piattaforme italiane di crowdfunding e raccolta fondi per il non profit, dove seguo l'intero ciclo di vita del prodotto con metodologia Agile (Scrum, Scrumban). In parallelo, sto completando la laurea in ICT, Innovazione sociale, comunicazione e nuove tecnologie all'Università degli Studi di Torino, e porto avanti TrustEU, un progetto indipendente sulla sovranità digitale europea.",
     expTitle: "Esperienza",
     experience: [
       {
@@ -178,7 +178,7 @@ export const CONTENT: Record<Lang, Content> = {
     ctaLinkedin: "LinkedIn profile",
     aboutTitle: "About me",
     aboutBody:
-      "I'm a Product Manager with 13+ years of experience running digital platforms. I currently own the product for one of Italy's leading nonprofit crowdfunding and fundraising platforms, covering the full product lifecycle with Agile methodology (Scrum, Scrumban). Alongside my job, I'm completing a degree in ICT, Social Innovation, Communication and New Technologies at the University of Turin, and running TrustEU, an independent project on European digital sovereignty.",
+      "I'm a Product Manager with experience running digital platforms. I currently own the product for one of Italy's leading nonprofit crowdfunding and fundraising platforms, covering the full product lifecycle with Agile methodology (Scrum, Scrumban). Alongside my job, I'm completing a degree in ICT, Social Innovation, Communication and New Technologies at the University of Turin, and running TrustEU, an independent project on European digital sovereignty.",
     expTitle: "Experience",
     experience: [
       {
