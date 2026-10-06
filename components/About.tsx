@@ -20,16 +20,16 @@ export default function About() {
       title: lang === "it" ? "User Research & UX Discovery" : "User Research & UX Discovery",
       desc:
         lang === "it"
-          ? "Approccio human-centered con test di usabilità, interviste a donatori e clienti Premium, prototipazione rapida e benchmark continuo."
-          : "Human-centered discovery with usability sessions, donor and client interviews, rapid prototyping, and continuous competitive benchmarking."
+          ? "Approccio human-centered con test di usabilità, interviste a utenti e clienti Premium, prototipazione rapida e benchmark continuo."
+          : "Human-centered discovery with usability sessions, user and client interviews, rapid prototyping, and continuous competitive benchmarking."
     },
     {
       icon: BarChart3,
       title: lang === "it" ? "Data, Pagamenti & Growth" : "Data, Payments & Growth",
       desc:
         lang === "it"
-          ? "Analisi approfondita dei funnel di donazione, integrazione gateway di pagamento (PayPal, Stripe, Satispay) e ottimizzazione della retention."
-          : "Deep funnel analytics, digital payment gateway orchestration (PayPal, Stripe, Satispay), conversion rate optimization, and retention."
+          ? "Analisi approfondita di funnel di conversione e transazione, integrazione di gateway di pagamento (PayPal, Stripe, Satispay) e ottimizzazione della retention — competenze trasversali applicabili a qualsiasi prodotto digitale con pagamenti."
+          : "Deep funnel and transaction analytics, digital payment gateway orchestration (PayPal, Stripe, Satispay), conversion rate optimization, and retention — skills that carry across fundraising, e-commerce, and any transaction-driven product."
     },
     {
       icon: Rocket,
@@ -37,7 +37,7 @@ export default function About() {
       desc:
         lang === "it"
           ? "Ponte affidabile ed empatico tra sviluppatori, designer, stakeholder istituzionali e partner per rilasciare prodotti stabili e scalabili."
-          : "Reliable and empathetic bridge between dev teams, UI/UX designers, non-profit stakeholders, and executive leadership."
+          : "Reliable and empathetic bridge between developers, designers, institutional stakeholders, and partners, delivering stable, scalable products."
     }
   ];
 

@@ -15,7 +15,7 @@ export default function Experience() {
         "Stripe · PayPal · Satispay",
         "Google Analytics · Hotjar",
         "Product Discovery",
-        "Fintech & Crowdfunding"
+        "Fintech & Payments"
       ];
     }
     return [
