@@ -73,13 +73,13 @@ export const CONTENT: Record<Lang, Content> = {
     meta: {
       title: "Mario Alessandro Sfienti — Digital Product Manager",
       description:
-        "Product Manager con oltre 13 anni di esperienza nel digitale. Fondatore di TrustEU, il progetto sulla sovranità digitale europea."
+        "Product Manager con esperienza nel digitale. Fondatore di TrustEU, il progetto sulla sovranità digitale europea."
     },
     nav: { about: "Chi sono", experience: "Esperienza", projects: "Progetti", contact: "Contatti" },
     heroName: "Mario Alessandro Sfienti",
     heroRole: "Digital Product Manager",
     heroIntro:
-      "Guido lo sviluppo di prodotti digitali da oltre 13 anni: dalla discovery alla roadmap, fino al rilascio. Oggi lavoro su una piattaforma italiana di crowdfunding non profit e porto avanti TrustEU, il mio progetto sulla sovranità digitale europea.",
+      "Guido lo sviluppo di prodotti digitali: dalla discovery alla roadmap, fino al rilascio. Oggi lavoro su una piattaforma italiana di crowdfunding non profit e porto avanti TrustEU, il mio progetto sulla sovranità digitale europea.",
     heroLocation: "Torino, Italia",
     ctaContact: "Scrivimi",
     ctaLinkedin: "Profilo LinkedIn",
@@ -166,13 +166,13 @@ export const CONTENT: Record<Lang, Content> = {
     meta: {
       title: "Mario Alessandro Sfienti — Digital Product Manager",
       description:
-        "Product Manager with 13+ years of experience in digital. Founder of TrustEU, a project on European digital sovereignty."
+        "Product Manager with experience in digital. Founder of TrustEU, a project on European digital sovereignty."
     },
     nav: { about: "About", experience: "Experience", projects: "Projects", contact: "Contact" },
     heroName: "Mario Alessandro Sfienti",
     heroRole: "Digital Product Manager",
     heroIntro:
-      "I've been driving digital product development for 13+ years — from discovery to roadmap to release. I currently work on an Italian nonprofit crowdfunding platform and run TrustEU, my project on European digital sovereignty.",
+      "I drive digital product development — from discovery to roadmap to release. I currently work on an Italian nonprofit crowdfunding platform and run TrustEU, my project on European digital sovereignty.",
     heroLocation: "Turin, Italy",
     ctaContact: "Get in touch",
     ctaLinkedin: "LinkedIn profile",
