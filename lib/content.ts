@@ -134,8 +134,8 @@ export const CONTENT: Record<Lang, Content> = {
     eduTitle: "Formazione",
     education: [
       { title: "Laurea in ICT, Innovazione sociale, comunicazione e nuove tecnologie", org: "Università degli Studi di Torino", period: "2024 — in corso · in parallelo al lavoro", logo: "/logos/unito.png" },
-      { title: "UX/UI Design", org: "Fastweb Digital Academy", period: "2022" },
       { title: "Inglese B1 — ESB (CEFR)", org: "British Institute Torino · Babel School Academy · Oxford House College", period: "2024" },
+      { title: "UX/UI Design", org: "Fastweb Digital Academy", period: "2022" },
       { title: "Adobe Illustrator", org: "Delpho Informatica", period: "2016" },
       { title: "Adobe Photoshop", org: "Centro Studi Raffaello", period: "2014" }
     ],
@@ -226,8 +226,8 @@ export const CONTENT: Record<Lang, Content> = {
     },
     eduTitle: "Education",
     education: [
-      { title: "Degree in ICT, Social Innovation, Communication and New Technologies", org: "University of Turin", period: "2024 — in progress · alongside my job", logo: "/logos/unito.png" },
       { title: "UX/UI Design", org: "Fastweb Digital Academy", period: "2022" },
+      { title: "Degree in ICT, Social Innovation, Communication and New Technologies", org: "University of Turin", period: "2024 — in progress · alongside my job", logo: "/logos/unito.png" },
       { title: "English B1 — ESB (CEFR)", org: "British Institute Turin · Babel School Academy · Oxford House College", period: "2024" },
       { title: "Adobe Illustrator", org: "Delpho Informatica", period: "2016" },
       { title: "Adobe Photoshop", org: "Centro Studi Raffaello", period: "2014" }
